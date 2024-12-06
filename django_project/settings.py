@@ -82,13 +82,16 @@ INSTALLED_APPS = [
 	'crispy_forms',
 	'crispy_bootstrap5',
 	'django_extensions',
-	'allauth_ui',
-	'widget_tweaks',
-	'slippers',
 	'star_ratings',
+
+	# -- Translation helpers -- #
 	'django_translate_gettext',
 
 	# -- Allauth stuff --- #
+	'allauth_ui',
+	'widget_tweaks',
+	'slippers',
+
 	'allauth',
 	'allauth.account',
 	'allauth.socialaccount',

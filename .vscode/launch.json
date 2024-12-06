@@ -22,6 +22,19 @@
 			"justMyCode": false,
 			"autoStartBrowser": false,
 			"program": "${workspaceFolder}/manage.py"
+		},
+		{
+			"name": "Debug this shit",
+			"type": "debugpy",
+			"request": "launch",
+			"args": [
+				"translate",
+				"planetary",
+				"-mm",
+				"de"
+			],
+			"django": true,
+			"program": "${workspaceFolder}/manage.py"
 		}
 	]
 }

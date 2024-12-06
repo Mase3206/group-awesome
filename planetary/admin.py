@@ -4,7 +4,8 @@ from django.utils.translation import gettext_lazy as _
 
 
 class PlanetaryTourAdmin(admin.ModelAdmin):
-    model = PlanetaryTourlist_display = (
+    model = PlanetaryTour
+    list_display = (
         "location_and_orbit",
         "about_planet",
         "name",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 12:52-0700\n"
+"POT-Creation-Date: 2024-12-06 00:01-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: allauth_ui/templates/account/account_inactive.html:5
 msgid "Account Inactive"
-msgstr ""
+msgstr "Konto inaktiv"
 
 #: allauth_ui/templates/account/account_inactive.html:6
 msgid "This account is inactive."
-msgstr ""
+msgstr "Dieses Konto ist inaktiv."
 
 #: allauth_ui/templates/account/base_reauthenticate.html:5
 msgid "Confirm Access"
-msgstr ""
+msgstr "Zugriff bestätigen"
 
 #: allauth_ui/templates/account/base_reauthenticate.html:6
 msgid ""
@@ -36,53 +36,61 @@ msgid ""
 "    Please reauthenticate to safeguard your account.\n"
 "    "
 msgstr ""
+"\n"
+"    "
+"    Bitte authentifizieren Sie sich erneut, um Ihr Konto zu schüt\n"
+"    "
+"\n"
+"    "
+"    Bitte authentifizieren Sie sich erneut, um Ihr Konto zu schüt\n"
+"    "
 
 #: allauth_ui/templates/account/base_reauthenticate.html:13
 #: allauth_ui/templates/mfa/authenticate.html:17
 msgid "Alternative options"
-msgstr ""
+msgstr "Alternative Optionen"
 
 #: allauth_ui/templates/account/email.html:5
 msgid "Email Addresses"
-msgstr ""
+msgstr "E-Mail-Adressen"
 
 #: allauth_ui/templates/account/email.html:9
 msgid "The following email addresses are associated with your account:"
-msgstr ""
+msgstr "Die folgenden E-Mail-Adressen sind mit Ihrem Konto verknüpft:"
 
 #: allauth_ui/templates/account/email.html:22
 msgid "verified"
-msgstr ""
+msgstr "verifiziert"
 
 #: allauth_ui/templates/account/email.html:25
 msgid "primary"
-msgstr ""
+msgstr "primär"
 
 #: allauth_ui/templates/account/email.html:41
 msgid "Make Primary"
-msgstr ""
+msgstr "Als Primär festlegen"
 
 #: allauth_ui/templates/account/email.html:44
 msgid "Re-send verification"
-msgstr ""
+msgstr "Bestätigung erneut senden"
 
 #: allauth_ui/templates/account/email.html:47
 #: allauth_ui/templates/socialaccount/connections.html:35
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: allauth_ui/templates/account/email.html:56
 msgid "Add Email Address"
-msgstr ""
+msgstr "E-Mail-Adresse hinzufügen"
 
 #: allauth_ui/templates/account/email.html:57
 msgid "Add Email"
-msgstr ""
+msgstr "E-Mail hinzufügen"
 
 #: allauth_ui/templates/account/email_confirm.html:7
 #: allauth_ui/templates/account/verification_sent.html:5
 msgid "Confirm Email Address"
-msgstr ""
+msgstr "e-Mail-Adresse bestätigen"
 
 #: allauth_ui/templates/account/email_confirm.html:13
 #, python-format
@@ -95,7 +103,7 @@ msgstr ""
 #: allauth_ui/templates/account/reauthenticate.html:9
 #: allauth_ui/templates/mfa/reauthenticate.html:9
 msgid "Confirm"
-msgstr ""
+msgstr "Bestätigen"
 
 #: allauth_ui/templates/account/email_confirm.html:23
 #, python-format
@@ -115,7 +123,7 @@ msgstr ""
 #: allauth_ui/templates/allauth/layouts/base.html:55
 #: allauth_ui/templates/mfa/authenticate.html:11
 msgid "Sign In"
-msgstr ""
+msgstr "Anmelden"
 
 #: allauth_ui/templates/account/login.html:10
 #, python-format
@@ -126,31 +134,31 @@ msgstr ""
 
 #: allauth_ui/templates/account/login.html:18
 msgid "Remember me"
-msgstr ""
+msgstr "Erinnere dich an mich"
 
 #: allauth_ui/templates/account/login.html:25
 msgid "Forgot password?"
-msgstr ""
+msgstr "Passwort vergessen?"
 
 #: allauth_ui/templates/account/login.html:31
 msgid "Mail me a sign-in code"
-msgstr ""
+msgstr "Schicken Sie mir einen Anmeldecode per E-Mail"
 
 #: allauth_ui/templates/account/logout.html:5
 #: allauth_ui/templates/allauth/layouts/base.html:50
 #: allauth_ui/templates/usersessions/usersession_list.html:15
 msgid "Sign Out"
-msgstr ""
+msgstr "Abmelden"
 
 #: allauth_ui/templates/account/logout.html:6
 msgid "Are you sure you want to sign out?"
-msgstr ""
+msgstr "Möchten Sie sich wirklich abmelden?"
 
 #: allauth_ui/templates/account/logout.html:9
 #: allauth_ui/templates/socialaccount/login.html:14
 #: allauth_ui/templates/socialaccount/signup.html:12
 msgid "Continue"
-msgstr ""
+msgstr "Weitermachen"
 
 #: allauth_ui/templates/account/password_change.html:6
 #: allauth_ui/templates/account/password_reset_from_key.html:8
@@ -158,16 +166,16 @@ msgstr ""
 #: allauth_ui/templates/account/password_reset_from_key_done.html:5
 #: allauth_ui/templates/allauth/layouts/base.html:38
 msgid "Change Password"
-msgstr ""
+msgstr "Kennwort ändern"
 
 #: allauth_ui/templates/account/password_change.html:14
 msgid "Forgot Password?"
-msgstr ""
+msgstr "Passwort vergessen?"
 
 #: allauth_ui/templates/account/password_reset.html:5
 #: allauth_ui/templates/account/password_reset_done.html:5
 msgid "Password Reset"
-msgstr ""
+msgstr "Passwort zurücksetzen"
 
 #: allauth_ui/templates/account/password_reset.html:11
 msgid ""
@@ -177,11 +185,11 @@ msgstr ""
 
 #: allauth_ui/templates/account/password_reset.html:14
 msgid "Reset My Password"
-msgstr ""
+msgstr "Mein Passwort zurücksetzen"
 
 #: allauth_ui/templates/account/password_reset.html:20
 msgid "Please contact us if you have any trouble resetting your password."
-msgstr ""
+msgstr "Bitte kontaktieren Sie uns, wenn Sie Probleme beim Zurücksetzen Ihres Passworts haben."
 
 #: allauth_ui/templates/account/password_reset_done.html:11
 msgid ""
@@ -191,7 +199,7 @@ msgstr ""
 
 #: allauth_ui/templates/account/password_reset_from_key.html:6
 msgid "Bad Token"
-msgstr ""
+msgstr "Ungültiges Token"
 
 #: allauth_ui/templates/account/password_reset_from_key.html:14
 #, python-format
@@ -203,22 +211,22 @@ msgstr ""
 
 #: allauth_ui/templates/account/password_reset_from_key_done.html:6
 msgid "Your password is now changed."
-msgstr ""
+msgstr "Ihr Passwort ist nun geändert."
 
 #: allauth_ui/templates/account/password_set.html:6
 msgid "Set Password"
-msgstr ""
+msgstr "Passwort festlegen"
 
 #: allauth_ui/templates/account/reauthenticate.html:6
 msgid "Enter your password:"
-msgstr ""
+msgstr "Geben Sie Ihr Passwort ein:"
 
 #: allauth_ui/templates/account/signup.html:6
 #: allauth_ui/templates/allauth/layouts/base.html:59
 #: allauth_ui/templates/socialaccount/signup.html:6
 #: allauth_ui/templates/socialaccount/signup.html:14
 msgid "Sign Up"
-msgstr ""
+msgstr "Melden Sie sich an"
 
 #: allauth_ui/templates/account/signup.html:7
 #, python-format
@@ -229,11 +237,11 @@ msgstr ""
 
 #: allauth_ui/templates/account/signup_closed.html:5
 msgid "Sign Up Closed"
-msgstr ""
+msgstr "Anmeldung geschlossen"
 
 #: allauth_ui/templates/account/signup_closed.html:6
 msgid "We are sorry, but the sign up is currently closed."
-msgstr ""
+msgstr "Es tut uns leid, aber die Anmeldung ist derzeit geschlossen."
 
 #: allauth_ui/templates/account/verification_sent.html:6
 msgid ""
@@ -245,18 +253,18 @@ msgstr ""
 
 #: allauth_ui/templates/allauth/layouts/base.html:34
 msgid "Change Email"
-msgstr ""
+msgstr "E-Mail ändern"
 
 #: allauth_ui/templates/allauth/layouts/base.html:42
 #: allauth_ui/templates/mfa/authenticate.html:6
 #: allauth_ui/templates/mfa/index.html:5
 msgid "Two-Factor Authentication"
-msgstr ""
+msgstr "Zwei-Faktor-Authentifizierung"
 
 #: allauth_ui/templates/allauth/layouts/base.html:46
 #: allauth_ui/templates/usersessions/usersession_list.html:6
 msgid "Sessions"
-msgstr ""
+msgstr "Sitzungen"
 
 #: allauth_ui/templates/mfa/authenticate.html:7
 msgid ""
@@ -268,36 +276,36 @@ msgstr ""
 #: allauth_ui/templates/mfa/index.html:22
 #: allauth_ui/templates/mfa/totp/activate_form.html:10
 msgid "Activate"
-msgstr ""
+msgstr "Aktivieren"
 
 #: allauth_ui/templates/mfa/authenticate.html:20
 msgid "Use a security key"
-msgstr ""
+msgstr "Verwenden Sie einen Sicherheitsschlüssel"
 
 #: allauth_ui/templates/mfa/authenticate.html:22
 msgid "Cancel"
-msgstr ""
+msgstr "Stornieren"
 
 #: allauth_ui/templates/mfa/index.html:8
 msgid "Authenticator App"
-msgstr ""
+msgstr "Authenticator App"
 
 #: allauth_ui/templates/mfa/index.html:11
 msgid "Authentication using an authenticator app is active."
-msgstr ""
+msgstr "Die Authentifizierung mittels Authenticator-App ist aktiv."
 
 #: allauth_ui/templates/mfa/index.html:15
 #: allauth_ui/templates/mfa/totp/deactivate_form.html:11
 msgid "Deactivate"
-msgstr ""
+msgstr "Deaktivieren"
 
 #: allauth_ui/templates/mfa/index.html:19
 msgid "An authenticator app is not active."
-msgstr ""
+msgstr "Eine Authenticator-App ist nicht aktiv."
 
 #: allauth_ui/templates/mfa/index.html:27
 msgid "Security Keys"
-msgstr ""
+msgstr "Sicherheitsschlüssel"
 
 #: allauth_ui/templates/mfa/index.html:30
 #, python-format
@@ -308,21 +316,21 @@ msgstr[1] ""
 
 #: allauth_ui/templates/mfa/index.html:34
 msgid "Manage"
-msgstr ""
+msgstr "Verwalten"
 
 #: allauth_ui/templates/mfa/index.html:36
 msgid "No security keys have been added."
-msgstr ""
+msgstr "Es wurden keine Sicherheitsschlüssel hinzugefügt."
 
 #: allauth_ui/templates/mfa/index.html:39
 msgid "Add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: allauth_ui/templates/mfa/index.html:45
 #: allauth_ui/templates/mfa/recovery_codes/generate.html:6
 #: allauth_ui/templates/mfa/recovery_codes/index.html:6
 msgid "Recovery Codes"
-msgstr ""
+msgstr "Wiederherstellungscodes"
 
 #: allauth_ui/templates/mfa/index.html:48
 #: allauth_ui/templates/mfa/recovery_codes/index.html:7
@@ -336,52 +344,52 @@ msgstr[1] ""
 
 #: allauth_ui/templates/mfa/index.html:50
 msgid "No recovery codes set up."
-msgstr ""
+msgstr "Keine Wiederherstellungscodes eingerichtet."
 
 #: allauth_ui/templates/mfa/index.html:59
 msgid "View"
-msgstr ""
+msgstr "Sicht"
 
 #: allauth_ui/templates/mfa/index.html:62
 msgid "Download"
-msgstr ""
+msgstr "Herunterladen"
 
 #: allauth_ui/templates/mfa/index.html:67
 #: allauth_ui/templates/mfa/recovery_codes/generate.html:16
 msgid "Generate"
-msgstr ""
+msgstr "Erzeugen"
 
 #: allauth_ui/templates/mfa/reauthenticate.html:6
 msgid "Enter an authenticator code:"
-msgstr ""
+msgstr "Geben Sie einen Authentifizierungscode ein:"
 
 #: allauth_ui/templates/mfa/recovery_codes/generate.html:7
 msgid "You are about to generate a new set of recovery codes for your account."
-msgstr ""
+msgstr "Sie sind dabei, einen neuen Satz Wiederherstellungscodes für Ihr Konto zu generieren."
 
 #: allauth_ui/templates/mfa/recovery_codes/generate.html:11
 msgid "This action will invalidate your existing codes."
-msgstr ""
+msgstr "Durch diese Aktion werden Ihre vorhandenen Codes ungültig."
 
 #: allauth_ui/templates/mfa/recovery_codes/generate.html:13
 msgid "Are you sure?"
-msgstr ""
+msgstr "Bist du sicher?"
 
 #: allauth_ui/templates/mfa/recovery_codes/index.html:11
 msgid "Unused codes"
-msgstr ""
+msgstr "Unbenutzte Codes"
 
 #: allauth_ui/templates/mfa/recovery_codes/index.html:21
 msgid "Download codes"
-msgstr ""
+msgstr "Codes herunterladen"
 
 #: allauth_ui/templates/mfa/recovery_codes/index.html:24
 msgid "Generate new codes"
-msgstr ""
+msgstr "Neue Codes generieren"
 
 #: allauth_ui/templates/mfa/totp/activate_form.html:7
 msgid "Activate Authenticator App"
-msgstr ""
+msgstr "Authenticator App aktivieren"
 
 #: allauth_ui/templates/mfa/totp/activate_form.html:8
 msgid ""
@@ -392,7 +400,7 @@ msgstr ""
 
 #: allauth_ui/templates/mfa/totp/activate_form.html:22
 msgid "Authenticator secret"
-msgstr ""
+msgstr "Authentifikator-Geheimnis"
 
 #: allauth_ui/templates/mfa/totp/activate_form.html:25
 msgid ""
@@ -402,7 +410,7 @@ msgstr ""
 
 #: allauth_ui/templates/mfa/totp/deactivate_form.html:5
 msgid "Deactivate Authenticator App"
-msgstr ""
+msgstr "Authenticator App deaktivieren"
 
 #: allauth_ui/templates/mfa/totp/deactivate_form.html:6
 msgid ""
@@ -412,7 +420,7 @@ msgstr ""
 
 #: allauth_ui/templates/socialaccount/authentication_error.html:5
 msgid "Third-Party Login Failure"
-msgstr ""
+msgstr "Anmeldefehler bei Drittanbietern"
 
 #: allauth_ui/templates/socialaccount/authentication_error.html:6
 msgid ""
@@ -421,7 +429,7 @@ msgstr ""
 
 #: allauth_ui/templates/socialaccount/connections.html:7
 msgid "Account Connections"
-msgstr ""
+msgstr "Kontoverbindungen"
 
 #: allauth_ui/templates/socialaccount/connections.html:9
 msgid ""
@@ -430,34 +438,44 @@ msgid ""
 "party accounts:\n"
 "        "
 msgstr ""
+"\n"
+"        "
+"        Sie können sich mit einem der folgenden Drittanbieterkonten bei Ihrem Ko"
+"nto anmelden:\n"
+"        "
+"\n"
+"        "
+"        Sie können sich mit einem der folgenden Drittanbieterkonten bei Ihrem Ko"
+"nto anmelden:\n"
+"        "
 
 #: allauth_ui/templates/socialaccount/connections.html:13
 msgid "You currently have no third-party accounts connected to this account."
-msgstr ""
+msgstr "Sie haben derzeit keine Drittanbieterkonten mit diesem Konto verknüpft."
 
 #: allauth_ui/templates/socialaccount/connections.html:39
 msgid "Add a Third-Party Account"
-msgstr ""
+msgstr "Hinzufügen eines Drittanbieterkontos"
 
 #: allauth_ui/templates/socialaccount/login.html:7
 #, python-format
 msgid "Connect %(provider)s"
-msgstr ""
+msgstr "%(provider)s verbinden"
 
 #: allauth_ui/templates/socialaccount/login.html:8
 #, python-format
 msgid "You are about to connect a new third-party account from %(provider)s."
-msgstr ""
+msgstr "Sie sind dabei, ein neues Drittanbieterkonto von %(provider)s zu verbinden."
 
 #: allauth_ui/templates/socialaccount/login.html:10
 #, python-format
 msgid "Sign In Via %(provider)s"
-msgstr ""
+msgstr "Anmelden über %(provider)s"
 
 #: allauth_ui/templates/socialaccount/login.html:11
 #, python-format
 msgid "You are about to sign in using a third-party account from %(provider)s."
-msgstr ""
+msgstr "Sie sind dabei, sich mit einem Drittanbieterkonto von %(provider)s anzumelden."
 
 #: allauth_ui/templates/socialaccount/signup.html:7
 #, python-format
@@ -468,31 +486,42 @@ msgid ""
 "        As a final step, please complete the following form:\n"
 "    "
 msgstr ""
+"\n"
+"    "
+"    Sie sind dabei, sich mit Ihrem %(provider_name)s-Konto bei %(site_name)s anz"
+"umelden.
+ Füllen Sie als letzten Schritt bitte das folgende Formular aus:\n"
+"    "
+"\n"
+"    "
+"    Sie sind dabei, sich mit Ihrem %(provider_name)s-Konto bei %(site_name)s anz"
+"umelden. Füllen Sie als letzten Schritt bitte das folgende Formular aus:\n"
+"    "
 
 #: allauth_ui/templates/socialaccount/snippets/login.html:8
 msgid "Or use a third-party"
-msgstr ""
+msgstr "Oder nutzen Sie einen Drittanbieter"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:12
 msgid "Sign Out Other Sessions"
-msgstr ""
+msgstr "Andere Sitzungen abmelden"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:23
 msgid "Started At"
-msgstr ""
+msgstr "Gestartet bei"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:24
 msgid "IP Address"
-msgstr ""
+msgstr "IP-Adresse"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:25
 msgid "Browser"
-msgstr ""
+msgstr "Browser"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:27
 msgid "Last seen at"
-msgstr ""
+msgstr "Zuletzt gesehen am"
 
 #: allauth_ui/templates/usersessions/usersession_list.html:50
 msgid "Current"
-msgstr ""
+msgstr "Aktuell"

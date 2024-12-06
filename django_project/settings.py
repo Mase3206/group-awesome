@@ -150,7 +150,20 @@ LANGUAGES = [
     ("vi", "Vietnamese"),
     ("zh-hans", "Simplified Chinese"),
 ]
-# LOCALE_PATHS = [ BASE_DIR / "locale" ]
+
+locale_apps = [
+	'allauth_ui',
+	'profiles',
+	'planetary',
+	'stellar',
+	'apod_app',
+]
+
+LOCALE_PATHS = [ 
+	BASE_DIR / "locale",
+	*[ BASE_DIR / app / 'locale' for app in locale_apps ]
+]
+
 
 
 ROOT_URLCONF = 'django_project.urls'

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 18:40-0700\n"
+"POT-Creation-Date: 2024-12-05 19:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: profiles/models.py:34
 msgid "Planet"
 msgstr "Planet"
@@ -44,3 +45,8 @@ msgstr "Sicherantwort"
 #: profiles/models.py:56
 msgid "Real account"
 msgstr "echtes Konto"
+
+#: profiles/templates/profiles/view.html:22
+#, python-format
+msgid "%(bio)s"
+msgstr "%(bio)s"

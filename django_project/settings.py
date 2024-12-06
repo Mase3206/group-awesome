@@ -122,49 +122,6 @@ MIDDLEWARE = [
 	# 'django.middleware.locale.LocaleMiddleware',
 ]
 
-LANGUAGE_CODE = 'de'
-LANGUAGES = [
-    ("de", "German"),
-    ("en", "English"),
-    ("es", "Spanish"),
-    ("mk", "Macedonian"),
-    ("mn", "Mongolian"),
-    ("nb", "Norwegian Bokmål"),
-    ("nl", "Dutch"),
-    ("nn", "Norwegian Nynorsk"),
-    ("pl", "Polish"),
-    ("pt", "Portuguese"),
-    ("pt-br", "Brazilian Portuguese"),
-    ("sk", "Slovak"),
-    ("sl", "Slovenian"),
-    ("sq", "Albanian"),
-    ("tg", "Tajik"),
-    ("th", "Thai"),
-    ("tk", "Turkmen"),
-    ("tr", "Turkish"),
-    ("udm", "Udmurt"),
-    ("ug", "Uyghur"),
-    ("uk", "Ukrainian"),
-    ("ur", "Urdu"),
-    ("uz", "Uzbek"),
-    ("vi", "Vietnamese"),
-    ("zh-hans", "Simplified Chinese"),
-]
-
-locale_apps = [
-	'allauth_ui',
-	'profiles',
-	'planetary',
-	'stellar',
-	'apod_app',
-]
-
-LOCALE_PATHS = [ 
-	BASE_DIR / "locale",
-	*[ BASE_DIR / app / 'locale' for app in locale_apps ]
-]
-
-
 
 ROOT_URLCONF = 'django_project.urls'
 
@@ -308,8 +265,50 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
+LANGUAGES = [
+    ("de", "German"),
+    ("en", "English"),
+    ("es", "Spanish"),
+    ("mk", "Macedonian"),
+    ("mn", "Mongolian"),
+    ("nb", "Norwegian Bokmål"),
+    ("nl", "Dutch"),
+    ("nn", "Norwegian Nynorsk"),
+    ("pl", "Polish"),
+    ("pt", "Portuguese"),
+    ("pt-br", "Brazilian Portuguese"),
+    ("sk", "Slovak"),
+    ("sl", "Slovenian"),
+    ("sq", "Albanian"),
+    ("tg", "Tajik"),
+    ("th", "Thai"),
+    ("tk", "Turkmen"),
+    ("tr", "Turkish"),
+    ("udm", "Udmurt"),
+    ("ug", "Uyghur"),
+    ("uk", "Ukrainian"),
+    ("ur", "Urdu"),
+    ("uz", "Uzbek"),
+    ("vi", "Vietnamese"),
+    ("zh-hans", "Simplified Chinese"),
+]
+
+# these two things are required for translations to work
+locale_apps = [
+	'allauth_ui',
+	'profiles',
+	'planetary',
+	'stellar',
+	'apod_app',
+]
+
+LOCALE_PATHS = [ 
+	BASE_DIR / "locale",
+	*[ BASE_DIR / app / 'locale' for app in locale_apps ]
+]
+
 LANGUAGE_CODE = 'de'
-# LANGUAGE = 'de'
+
 USE_I18N = True
 USE_L10N = True
 

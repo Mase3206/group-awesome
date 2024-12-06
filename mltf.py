@@ -36,7 +36,7 @@ class PoFileMultiLineTranslator:
 		parts[-1] = self.translate_block(block=raw_msgstr, msgid=msgid)
 		return "\n".join(parts)
 	
-	def process_multi_line_block(self, multiline_block: MultilineText) -> str:
+	def translate_multi_line_block(self, multiline_block: MultilineText) -> str:
 		msgid = multiline_block.content
 		translated = self.translator.translate(msgid)[:-2]
 		indent = ''.join([' ' for i in range(multiline_block.indentation_depth)])
@@ -97,7 +97,7 @@ class PoFileMultiLineTranslator:
 				multiline_text = MultilineText.try_create_multline(block)
 				if multiline_text:
 					multiline_text.get_content()
-					result.append(self.process_multi_line_block(multiline_text))
+					result.append(self.translate_multi_line_block(multiline_text))
 					print('done.')
 					continue
 
@@ -188,7 +188,7 @@ class MultilineText:
 		regex = MultilineText.get_regex_block(block)
 		if len(regex) > 0:
 			return MultilineText(block, regex_block=regex)
-	
+
 
 
 

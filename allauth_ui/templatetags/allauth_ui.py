@@ -1,6 +1,7 @@
 from django import template
 from django.conf import settings
 from slippers.templatetags.slippers import register_components
+from django.utils.translation import gettext_lazy as _
 
 register = template.Library()
 

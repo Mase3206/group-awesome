@@ -3,6 +3,7 @@ from django.shortcuts import render
 from datetime import datetime
 import requests
 from django.templatetags.static import static 
+from django.utils.translation import gettext as _
 
 NASA_API_URL = 'https://api.nasa.gov/planetary/apod'
 NASA_API_KEY = 'xgbprF9SyPJs5cFNUXfbeQi8A7F2yVFZYIg2xcxw'

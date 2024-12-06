@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% comment %} {% load crispy_forms_tags %} {% endcomment %}
 {% comment %} {% load static %} {% endcomment %}
+{% load i18n %}
 
 
 {% block title %}Profile{% endblock title %}
@@ -16,7 +17,7 @@
 	
 	<div class="profiles-part">
 		<h3>Bio</h3>
-		<p>{{ object.bio }}</p>
+		<p>{% blocktranslate with bio=object.bio %}{{ bio }}{% endblocktranslate %}</p>
 	</div>
 	
 	<div class="profiles-part">

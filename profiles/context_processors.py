@@ -1,4 +1,6 @@
 from .models import SpaceTravelerProfile
+from django.utils.translation import gettext_lazy as _
+
 
 def user_profile(request):
     """
@@ -14,14 +16,10 @@ def user_profile(request):
     * If the user is signed in but *has not* created their profile, return None.
     * If the user is signed in and *has* created their profile, return their profile object.
     """
-    
     profile = None
-
     if request.user.is_authenticated:
         try:
             profile = SpaceTravelerProfile.objects.get(real_account=request.user)
         except SpaceTravelerProfile.DoesNotExist:
             pass
-    
-    return {'profile': profile}
-
+    return {"profile": profile}

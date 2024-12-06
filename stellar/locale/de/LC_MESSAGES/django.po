@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-05 18:55-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: stellar/models.py:8 stellar/models.py:44
+msgid "Name"
+msgstr ""
+
+#: stellar/models.py:9
+msgid "Type"
+msgstr ""
+
+#: stellar/models.py:10
+msgid "Distance"
+msgstr ""
+
+#: stellar/models.py:11
+msgid "Temp"
+msgstr ""
+
+#: stellar/models.py:13 stellar/models.py:47
+msgid "Home image"
+msgstr ""
+
+#: stellar/models.py:18 stellar/models.py:52
+msgid "Image 1"
+msgstr ""
+
+#: stellar/models.py:23 stellar/models.py:57
+msgid "Image 2"
+msgstr ""
+
+#: stellar/models.py:28 stellar/models.py:62
+msgid "Image 3"
+msgstr ""
+
+#: stellar/models.py:32 stellar/models.py:66
+msgid "About 1"
+msgstr ""
+
+#: stellar/models.py:33 stellar/models.py:67
+msgid "About 2"
+msgstr ""
+
+#: stellar/models.py:34 stellar/models.py:68
+msgid "About 3"
+msgstr ""
+
+#: stellar/models.py:35 stellar/models.py:69
+msgid "Link"
+msgstr ""
+
+#: stellar/models.py:36 stellar/models.py:70
+msgid "Length"
+msgstr ""
+
+#: stellar/models.py:37 stellar/models.py:71
+msgid "Number of people per tour"
+msgstr ""
+
+#: stellar/models.py:45
+msgid "Stars"
+msgstr ""

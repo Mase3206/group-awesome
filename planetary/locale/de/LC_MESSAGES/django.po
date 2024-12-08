@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-06 00:37-0700\n"
+"POT-Creation-Date: 2024-12-06 00:47-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: planetary/models.py:6
+#: planetary/models.py:5
 msgid "Location and orbit"
 msgstr "Standort und Umlaufbahn"
 
-#: planetary/models.py:7
+#: planetary/models.py:6
 msgid "About"
 msgstr "Um"
 
-#: planetary/models.py:8
+#: planetary/models.py:7
 msgid "Name"
 msgstr "Name"
 
-#: planetary/models.py:9
+#: planetary/models.py:8
 msgid "Length"
 msgstr "Länge"
 
-#: planetary/models.py:10
+#: planetary/models.py:9
 msgid "Number of people per tour"
 msgstr "Anzahl Personen pro Tour"
 
-#: planetary/models.py:12
+#: planetary/models.py:10
 msgid "Image"
 msgstr "Bild"
 
-#: planetary/models.py:15
+#: planetary/models.py:11
 msgid "Image 2"
 msgstr "Bild 2"
 
-#: planetary/models.py:18
+#: planetary/models.py:12
 msgid "Image 3"
 msgstr "Bild 3"
 
-#: planetary/models.py:21
+#: planetary/models.py:13
 msgid "Image 4"
 msgstr "Bild 4"
 
@@ -73,35 +73,6 @@ msgstr ""
 "Planeten, Zwergplaneten und Exoplaneten werden Sie sicher einen Ort finden, der "
 "Sie anzieht.\n"
 "    "
-"\n"
-"        Willkommen zu den von uns angebotenen Planeten- und "
-"Exoplanetentouren. Egal, ob Sie in der Nähe Ihres Zuhauses bleiben und unser "
-"Sonnensystem erkunden möchten oder ob Sie Abenteuerlust haben und über die "
-"Reichweite unserer Sonne hinausgehen möchten, wir haben genau das richtige "
-"Ziel für Sie. Mit einer Vielzahl von Planeten, Zwergplaneten und Exoplaneten "
-"werden Sie sicher einen Ort finden, der Sie anzieht.\n"
-"    \n"
-"        Willkommen zu den von uns angebotenen Planeten- und "
-"Exoplanetentouren. Egal, ob Sie in der Nähe Ihres Zuhauses bleiben und unser "
-"Sonnensystem erkunden möchten oder ob Sie Abenteuerlust haben und über die "
-"Reichweite unserer Sonne hinausgehen möchten, wir haben genau das richtige "
-"Ziel für Sie. Mit einer Vielzahl von Planeten, Zwergplaneten und Exoplaneten "
-"werden Sie sicher einen Ort finden, der Sie anzieht.\n"
-"    \n"
-"        Willkommen zu den von uns angebotenen Planeten- und "
-"Exoplanetentouren. Egal, ob Sie in der Nähe Ihres Zuhauses bleiben und unser "
-"Sonnensystem erkunden möchten oder ob Sie Abenteuerlust haben und über die "
-"Reichweite unserer Sonne hinausgehen möchten, wir haben genau das richtige "
-"Ziel für Sie. Mit einer Vielzahl von Planeten, Zwergplaneten und Exoplaneten "
-"werden Sie sicher einen Ort finden, der Sie anzieht.\n"
-"    \n"
-"        Willkommen zu den von uns angebotenen Planeten- und "
-"Exoplanetentouren. Egal, ob Sie in der Nähe Ihres Zuhauses bleiben und unser "
-"Sonnensystem erkunden möchten oder ob Sie Abenteuerlust haben und über die "
-"Reichweite unserer Sonne hinausgehen möchten, wir haben genau das richtige "
-"Ziel für Sie. Mit einer Vielzahl von Planeten, Zwergplaneten und Exoplaneten "
-"werden Sie sicher einen Ort finden, der Sie anzieht.\n"
-"    "
 
 #: planetary/templates/planetary/all.html:18
 msgid ""
@@ -116,23 +87,6 @@ msgstr ""
 "    Von Gasriesen mit wirbelnden Gasen bis hin zu terrestrischen und felsigen Pl"
 "aneten voller Krater – jeder Himmelskörper bietet seine eigenen, einzigartigen M"
 "erkmale. Entdecken Sie Welten, die ihresgleichen suchen! \n"
-"    "
-"\n"
-"        Von Gasriesen mit wirbelnden Gasen bis hin zu terrestrischen und "
-"felsigen Planeten voller Krater – jeder Himmelskörper bietet seine eigenen, "
-"einzigartigen Merkmale. Entdecken Sie Welten, die ihresgleichen suchen! \n"
-"    \n"
-"        Von Gasriesen mit wirbelnden Gasen bis hin zu terrestrischen und "
-"felsigen Planeten voller Krater – jeder Himmelskörper bietet seine eigenen, "
-"einzigartigen Merkmale. Entdecken Sie Welten, die ihresgleichen suchen! \n"
-"    \n"
-"        Von Gasriesen mit wirbelnden Gasen bis hin zu terrestrischen und "
-"felsigen Planeten voller Krater – jeder Himmelskörper bietet seine eigenen, "
-"einzigartigen Merkmale. Entdecken Sie Welten, die ihresgleichen suchen! \n"
-"    \n"
-"        Von Gasriesen mit wirbelnden Gasen bis hin zu terrestrischen und "
-"felsigen Planeten voller Krater – jeder Himmelskörper bietet seine eigenen, "
-"einzigartigen Merkmale. Entdecken Sie Welten, die ihresgleichen suchen! \n"
 "    "
 
 #: planetary/templates/planetary/all.html:28

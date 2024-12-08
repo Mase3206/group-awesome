@@ -265,6 +265,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
+LANGUAGE_CODE = 'de'
 LANGUAGES = [
     ("de", "German"),
     ("en", "English"),
@@ -307,7 +308,6 @@ LOCALE_PATHS = [
 	*[ BASE_DIR / app / 'locale' for app in locale_apps ]
 ]
 
-LANGUAGE_CODE = 'de'
 
 USE_I18N = True
 USE_L10N = True

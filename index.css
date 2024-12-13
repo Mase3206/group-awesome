@@ -69,6 +69,13 @@ i {
     color: #c97cbc;
 }
 
+.image {
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
 ul {
     list-style-type: none;
     padding-left: 20px;

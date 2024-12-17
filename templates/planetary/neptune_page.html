@@ -1,0 +1,73 @@
+<!-- templates/planetary/neptune_page.html -->
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load ratings %}
+{% load static %}
+
+{% block content %}
+
+<h1>A Guide To Neptune</h1>
+
+<div class="center">
+    <h3 class="box-title">Location and Orbit</h3>
+    <div class="info-item">
+        <img src="{% static 'images/neptune-location.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>  
+                    Neptune is the eighth planet from the sun and has the second lowest eccentric orbit, meaning
+                    it is almost perfectly circular. 
+                </li>
+                <li>
+                    It is located about 4.5 billion kilometers from the Sun. 
+                </li>
+                <li>
+                    Beyond Neptun's orbit lies the Kuiper Belt, a region of dwarf planets, comets, and other icy objects. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">About</h3>
+    <div class="info-item">
+        <img src="{% static 'images/neptune-about.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>
+                    Neptune's famous blue color is from the methane in its atmosphere. 
+                </li>
+                <li>
+                    Having the highest wind speeds in the solar system, Neptune's storms are some of 
+                    the strongest and most violent. With some vortices being as wide as Earth. 
+                </li>
+                <li>
+                    There are 16 known moons, with Triton being the largest and oddly enough having a retrograde orbit. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">Tour Info</h3>
+    <div class="info-item">
+        <img src="{% static 'images/neptune-tour.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>The length of the {{ tour.name }} is: {{ tour.length }} months</li>
+                <li>The total number of people that can register for this tour is: {{tour.num_people }}</li>
+                <li>For any questions about this tour or any others we offer please reach out. We are hapy to
+                    make any needed accomodations or answer any questions relevant to the services we offer.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="box-title">Tour Rating</h3>
+    <div class="rating">
+        {% ratings tour %}
+    </div>
+    
+    <div class="button-inline-tour">
+        <a class="button-29" href="{% url 'planetary' %}">Back</a>
+    </div>
+</div>
+
+{% endblock %}

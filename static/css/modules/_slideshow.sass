@@ -1,0 +1,58 @@
+@use "global/functions"
+	
+// Styling for the JavaScript slideshow
+.border
+	padding-top: 3%
+	padding-bottom: 3%
+	border-color: transparent
+	outline: none
+	border: none !important
+
+
+.slideshow-container
+	position: relative
+	max-width: 400px
+	margin: auto
+	overflow: hidden
+	border: none
+
+
+.slide-move
+	display: none
+	position: absolute
+	width: 100%
+	height: auto
+	object-fit: cover
+
+
+img
+	width: 400px
+	height: 400px
+	border: 5px solid functions.pretty-gradient()
+	border-radius: 10px
+	box-sizing: border-box
+
+
+.prev
+	cursor: pointer
+	position: absolute
+	top: 50%
+	/* Center vertically */
+	width: auto
+	padding: 16px
+	color: white
+	font-weight: bold
+	font-size: 18px
+	transition: 0.6s ease
+	border-radius: 0 3px 3px 0
+	user-select: none
+
+	&:hover
+		// Dark background on hover
+		background-color: rgba(0, 0, 0, 0.8)
+
+
+.next
+	@extend .prev
+	right: 0
+	border-radius: 3px 0 0 3px

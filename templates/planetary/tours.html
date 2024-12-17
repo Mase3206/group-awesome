@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load ratings %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ object.name }}</h1>
+
+<div class="center">
+    <h3 class="box-title">Location and Orbit</h3>
+    <div class="info-item">
+        {% comment %} <img src="{% static 'images/kepler-location.jpg' %}" class="planet-image"> {% endcomment %}
+        <div class="info-text">
+            {{ object.location_and_orbit }}
+        </div>
+    </div>
+    <h3 class="box-title">About</h3>
+    <div class="info-item">
+        {% comment %} <img src="{% static 'images/kepler-about.jpg' %}" class="planet-image"> {% endcomment %}
+        <div class="info-text">
+            {{ object.about_planet }}
+        </div>
+    </div>
+    <h3 class="box-title">Tour Info</h3>
+    <div class="info-item">
+        {% comment %} <img src="{% static 'images/kepler-tour.jpg' %}" class="planet-image"> {% endcomment %}
+        <div class="info-text">
+            <ul>
+                <li>The length of the {{ object.name }} is: {{ object.length }} months</li>
+                <li>The total number of people that can register for this tour is: {{object.num_people }}</li>
+                <li>For any questions about this tour or any others we offer please reach out. We are hapy to
+                    make any needed accomodations or answer any questions relevant to the services we offer.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {% comment %} <h3 class="box-title">Tour Rating</h3>
+    <div class="rating">
+        {% ratings tour %}
+    </div> {% endcomment %}
+    
+    <div class="button-inline-tour">
+        <a class="button-29" href="{% url 'planetary' %}">Back</a>
+    </div>
+</div>
+
+{% endblock content %}

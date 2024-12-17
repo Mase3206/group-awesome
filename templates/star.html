@@ -1,0 +1,80 @@
+<!-- templates/planetary/kepler_page.html -->
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load ratings %}
+{% load static %}
+
+{% block content %}
+
+<h1>A Guide To {{ object.name }}</h1>
+
+<div class="center">
+    <h3 class="box-title">Star Details</h3>
+    <div class="info-item">
+        <img src="{{ object.image1.url }}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li style="color:white;">  
+                    {{ object.name }} is a {{ object.type }} star. 
+                </li>
+                <li style="color:white;">
+                    It is {{ object.distance }} Light-Years away from Earth. 
+                </li>
+                <li style="color:white;">
+                    It has surface temperature of {{ object.temp }} degrees Kelvin. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">About</h3>
+    <div class="info-item">
+        <img src="{{ object.image2.url }}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li style="color:white;">
+                    {{ object.about1 }} 
+                </li>
+                <li style="color:white;">
+                    {{ object.about2 }} 
+                </li>
+                <li style="color:white;">
+                    {{ object.about3 }} 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">Tour Info</h3>
+    <div class="info-item">
+        <img src="{{ object.image3.url }}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li style="color:white;">
+                    The length of tour to {{ object.name }} is: {{ object.length }} months</li>
+                </li>
+                <li style="color:white;">
+                    The total number of people that can register for this tour is: {{object.num_people }}</li>
+                </li>
+                <li style="color:white;">
+                    For any questions about this tour or any others we offer please reach out. We are hapy to
+                    make any needed accomodations or answer any questions relevant to the services we offer.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="box-title">Tour Rating</h3>
+    <div class="rating">
+        {% ratings object %}
+    </div>
+
+    <div class="button-inline-tour">
+        <a class="button-29" href="{{ object.link }}">NASA</a>
+    </div>
+    
+    <div class="button-inline-tour">
+        <a class="button-29" href="{% url 'stellar_home' %}">Back</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+
+{% block title %}403 Forbidden{% endblock title %}
+{% block content %}
+
+<h2>403 Forbidden</h2>
+<p>You are not authorized to access this page.</p>
+<p><strong>Reason:</strong> {{ exception }}</p>
+
+<a href="{% url "home" %}">Click here to go home.</a>
+
+{% endblock content %}

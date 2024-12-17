@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<h1>Planetary Tours</h1>
+
+<p class="intro-planetary">Welcome to the planetary and exo-planetary tours we offer. Whether you want so stay close to home and 
+    explore our solar system or you have a taste for adventure and want to go beyond the reaches of our
+    Sun we have just the destination for you. With a variety of planets, dwarf planets, and exoplanets
+    you will be sure to find a place that draws you in. </p>
+<p class="intro-planetary">From gaseous giants of swirling gases, to terrestrial and rocky planets littered with craters, each body 
+    provides its own unique features. Explore worlds unlike no other! </p>
+
+<div class="tour-grid">
+    {% for tour in planetary_tours %}
+        <div class="tour-item">
+            <a href="{% url 'planetary:tour_detail' pk=tour.pk %}">
+                <img class="tour-image" src="{{ tour.image.url }}" alt="{{ tour.name }} Image">
+            </a>
+            <h3>{{ tour.name }}</h3>
+        </div>
+    {% empty %}
+        <li>No planetary tours found</li>
+    {% endfor %}
+</div>
+
+{% endblock %}
+
+

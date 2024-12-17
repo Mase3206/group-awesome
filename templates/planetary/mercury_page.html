@@ -1,0 +1,75 @@
+<!-- templates/planetary/mercury_page.html -->
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load ratings %}
+{% load static %}
+
+
+{% block content %}
+
+<h1>A Guide To Mercury</h1>
+
+<div class="center">
+    <h3 class="box-title">Location and Orbit</h3>
+    <div class="info-item">
+        <img src="{% static 'images/mercury-location.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>Mercury is the first planet in the solar system and closest to the sun. On average it is about 
+                    58 million kilometers from the sun. It ranges from being about 47 million kilometers away to being as 
+                    far as 70 million kilometers from the sun.   
+                </li>
+                <li>
+                    With a highly elliptical orbit, Mercury has some points in in orbit where it experiences no sunrises
+                    or sunsets. 
+                </li>
+                <li>
+                    Because the axis of rotation is only 2 degrees Mercury does not experience seasons as other planets do.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">About</h3>
+    <div class="info-item">
+        <img src="{% static 'images/mercury-about.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>Because of its proximity to the sun Mercury has no moons or atmosphere.</li>
+                <li>Its surface is scarred with craters from the bombardment of comets and meteroids. Many craters
+                    are named after famous artists, musicians, and authors. 
+                </li>
+                <li>
+                    Though it has a relatively weak magnetic field, it's closeness to the sun causes its field to interact
+                    with the solar winds, resulting in strong magnetic tornadoes that funnel fast solar wind plasma down to the 
+                    surface.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">Tour Info</h3>
+    <div class="info-item">
+        <img src="{% static 'images/mercury-tour.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>The length of the {{ tour.name }} is: {{ tour.length }} months</li>
+                <li>The total number of people that can register for this tour is: {{tour.num_people }}</li>
+                <li>For any questions about this tour or any others we offer please reach out. We are hapy to
+                    make any needed accomodations or answer any questions relevant to the services we offer.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="box-title">Tour Rating</h3>
+    <div class="rating">
+        {% ratings tour %}
+    </div>
+
+    <div class="button-inline-tour">
+        <a class="button-29" href="{% url 'planetary' %}">Back</a>
+    </div>
+
+</div>
+
+{% endblock %}

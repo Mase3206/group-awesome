@@ -1,0 +1,74 @@
+<!-- templates/planetary/pluto_page.html -->
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load ratings %}
+{% load static %}
+
+{% block content %}
+
+<h1>A Guide To Pluto</h1>
+
+<div class="center">
+    <h3 class="box-title">Location and Orbit</h3>
+    <div class="info-item">
+        <img src="{% static 'images/pluto-location.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>  
+                    Pluto is a dwarf planet found in the Kuiper Belt, a smaller body it is about half the 
+                    width of about 2,2500 kilometers. 
+                <li>
+                    It is at a distance of around 3.6 billion kilometers from the Sun and has a highly eccentric orbit. Pluto's
+                    orbit is also tilted at 17.1 degrees relative to the plane of the eliptic. 
+                </li>
+                <li>
+                    Though Neptune has the greatest effect on Pluto's orbit, Uranus can destabilize it. Meaning its orbit is 
+                    unpredictable and maye escape the solar system at some point. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">About</h3>
+    <div class="info-item">
+        <img src="{% static 'images/pluto-about.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>
+                    Pluto is orbited by five icy moons, with Charon being the largest at about half the size of Pluto.
+                </li>
+                <li>
+                    The surface of Pluto is littered with mountains, plains and craters. With the temperature reaching 
+                </li>
+                <li>
+                    Its composition is about 70% rock and 30% water ice, with some other ices such as methane and nitrogen
+                    coating the surface. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="box-title">Tour Info</h3>
+    <div class="info-item">
+        <img src="{% static 'images/pluto-tour.jpg' %}" class="planet-image">
+        <div class="info-text">
+            <ul>
+                <li>The length of the {{ tour.name }} is: {{ tour.length }} months</li>
+                <li>The total number of people that can register for this tour is: {{tour.num_people }}</li>
+                <li>For any questions about this tour or any others we offer please reach out. We are hapy to
+                    make any needed accomodations or answer any questions relevant to the services we offer.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="box-title">Tour Rating</h3>
+    <div class="rating">
+        {% ratings tour %}
+    </div>
+    
+    <div class="button-inline-tour">
+        <a class="button-29" href="{% url 'planetary' %}">Back</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,132 @@
+@use "global/colors"
+@use "global/functions"
+
+
+:root
+	// default colors used by bootstrap
+	// the extra brackets are required for variable replacement to function
+	// see https://sass-lang.com/documentation/breaking-changes/css-vars/
+	--bs-body-color: #{colors.$text-primary}
+	--bs-body-bg: #{colors.$background}
+
+
+body
+	color: colors.$text-primary
+	background-color: colors.$background
+
+
+h1
+	text-align: center
+	font-size: 45px
+	padding-top: 3%
+	padding-bottom: 5%
+
+h2
+	text-align: center
+	padding-top: 2%
+	padding-bottom: 2%
+
+
+.logo
+	max-height: 120px
+	width: auto
+
+	@media (max-width: 768px)
+		&
+			max-height: 40px
+
+.person
+	font-size: 40px
+	font-weight: 4
+	text-align: center
+	padding: 10px 20px
+
+	&1 
+		@extend .person
+		color: colors.$orange
+
+	&2
+		@extend .person
+		color: colors.$purple
+
+	&3
+		@extend .person
+		color: colors.$indigo
+
+// same styling as .intro
+.about-me
+	text-align: center
+	font-size: 20px
+
+
+// not person intro - page intro - though they are the same
+.intro
+	@extend .about-me
+
+	&-planetary
+		@extend .intro
+		font-size: 24px
+
+.about
+	@extend .intro
+
+// vestigial
+.sign-up
+	text-align: center
+
+// unnecessary - bootstrap likely has this already
+.centered
+	display: flex
+	justify-content: center
+	align-items: center
+	gap: 30px
+	padding-bottom: 5%
+
+.col
+	width: 250px
+	text-align: center
+	padding: 2%
+
+.col-img
+	display: flex
+	justify-content: space-between
+	width: 90%
+	padding: 30px
+	padding-top: 5%
+	padding-bottom: 5%
+	box-sizing: border-box
+	text-align: center
+
+
+// only used on two templates that aren't even implemented anymore
+.white
+	color: white
+
+
+.pretty
+	background: functions.pretty-gradient()
+	// background: line
+
+
+.navbar-custom
+	@extend .pretty
+
+.navbar-text
+	color: colors.$text-primary
+	font-weight: 700
+
+	&-lighter
+		@extend .navbar-text
+		font-weight: 400
+
+	&-subtitle
+		@extend .navbar-text-lighter
+		margin-left: 1em
+
+
+// vestigial
+.form-text
+	color: white !important
+
+.hidden
+	display: none

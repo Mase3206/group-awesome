@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% comment %} {% load static %} {% endcomment %}
+
+
+{% block title %}Update your profile{% endblock title %}
+
+{% block content %}
+<div class="profiles">
+	<h2>Update your profile</h2>
+	
+	<form action="" method="post">{% csrf_token %}
+		<div class="row g-3">
+			<!-- Row 1 -->
+			<div class="col-md-5">
+				{{ form.home_planet|as_crispy_field }}
+			</div>
+			<div class="col-md-5">
+				{{ form.language|as_crispy_field }}
+			</div>
+			<div class="col-md-2">
+				{{ form.age|as_crispy_field }}
+			</div>
+	
+			<!-- Row 2 -->
+			<div class="col-12">
+				{{ form.bio|as_crispy_field }}
+			</div>
+	
+			<!-- Row 3 -->
+			<div class="col-md-6">
+				{{ form.security_question|as_crispy_field }}
+			</div>
+			<div class="col-md-6">
+				{{ form.security_answer|as_crispy_field }}
+			</div>
+	
+			<!-- Hidden -->
+			<div class="hidden">
+				<p>{{ form.real_account }}</p>
+			</div>
+		</div>
+	
+		<br />
+		<button type="submit" class="btn btn-info">Update profile</button>
+	</form>
+</div>
+{% endblock content %}

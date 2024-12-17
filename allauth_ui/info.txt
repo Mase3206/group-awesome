@@ -1,0 +1,1 @@
+This was literally taken from the django-allauth-ui project. They didn't have a good way to create and package custom themes in the same project, so I just copied their code. It's available here. https://github.com/danihodovic/django-allauth-ui

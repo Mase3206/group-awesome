@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% comment %} {% load static %} {% endcomment %}
+
+
+{% block title %}Create your profile{% endblock title %}
+
+{% block content %}
+<h2>Create your profile</h2>
+
+<form action="" method="post">{% csrf_token %}
+	{{ form|crispy }}
+	<button type="submit" class="btn btn-info">Create profile</button>
+</form>
+{% endblock content %}

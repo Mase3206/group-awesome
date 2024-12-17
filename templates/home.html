@@ -1,0 +1,96 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>A Guide To The Galaxy</h1>
+
+<div class="intro"> 
+    <p>Whether it's traveling to a far away galaxy or exploring a planet close to home we are here to help. 
+        With so many destinations to choose some, each offering their own breath taking features, we are sure there
+        will be a destination that speaks to you. Explore the far reaches of our galaxy or take a trip to another. 
+        With our comprehensize guide you are sure to get the most out of your trip to a new world!
+    </p>
+</div>
+{% if not user.is_authenticated %}
+    <h2>Sign Up and Get Started Today</h2>
+    <div class="button-inline">
+        <a class="button-29" href="{% url 'account_signup' %}">Sign Up</a>
+    </div>
+{% elif not profile.pk %}
+    <h2>Create your profile</h2>
+    <p class="centered pb-0">Welcome, {{ user.username }}! It looks like you haven't made your profile yet. Let's fix that!</p>
+    <div class="button-inline mb-4">
+        <a href="{% url 'profiles:create' %}" class="button-29">Create Profile</a>
+    </div>
+{% endif %}
+
+<h2>Explore What Space Has To Offer!</h2>
+
+<div class="border">
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="{% static 'images/home/mercury.jpg' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/jupiter.jpg' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/mars.png' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/jupiter.jpg' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/stars.jpg' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/uranus.png' %}">
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/home/vega.jpg' %}">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+</div>
+
+<h2> Astronomy Picture of The Day</h2>
+<p class="intro">Enjoy a new image from NASA every day! Ranging from the newest JWST galaxy images to pictures of 
+    rare astronomical phenomena each day is something new. 
+</p>
+<br>
+<div>
+    <h3 class="apod-title">{{ title }}</h3>
+    <p class="apod-date">{{ date }}</p>
+    <div class="apod-img"><img src="{{ url }}" alt="{{ title }}"></div>
+</div>
+
+<h2>Meet The Developers</h2>
+<div class="centered">
+    <div class="col">
+        <h4 class="person1">Madison D.</h4>
+        <p class="about-me">
+            I'm studying computer science and astronomy to combine two things I love. In 
+            my free time I enjoy playing video games or reading, particularly science fiction. A lover of coding 
+            I am constantly exploring what it has to offer. 
+        </p>
+    </div>
+    <div class="col">
+        <h4 class="person2">Noah R.</h4>
+        <p class="about-me">
+            As a giant tech nerd I run my own homelab and am a collector of calculators. Outside of tech
+            I enjoy biking and camping and am a proud Eagle Scout. I am also a huge language enthusiast. 
+        </p>
+    </div>
+    <div class="col">
+        <h4 class="person3">Soren A.</h4>
+        <p class="about-me">
+            Hi, my name is Soren. Also a huge tech nerd I am studying computer science and enjoy 
+            programming. In my free time I like to develop games. Other than coding I am an avid DnD player. 
+        </p>
+    </div>
+</div>
+{% endblock content %}

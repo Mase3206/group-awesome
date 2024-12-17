@@ -1,0 +1,43 @@
+@use "global/colors"
+
+
+.profiles
+	margin-top: 3em
+	&-detail
+		max-width: 50%
+		margin-left: auto
+		margin-right: auto
+	
+		&>h2
+			margin-top: 1em
+			margin-bottom: 1em
+	&-part
+		margin-top: 2em
+
+		&>h3
+			color: colors.$almost-white
+	
+	&-grid
+		display: grid
+		// create 4 equal-width columns
+		grid-template-columns: repeat(4, 1fr)
+		gap: 20px
+	
+	&-card
+		text-align: center
+		border: 2px solid colors.$almost-white
+		padding: 10px
+		border-radius: 8px
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+		background-color: colors.$grey
+		transition: transform 0.3s ease, box-shadow 0.3s ease
+
+		&-body
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			min-height: 200px
+
+		&-info
+			margin-top: auto
